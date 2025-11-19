@@ -301,9 +301,6 @@ const App: React.FC = () => {
         )}
       </main>
       
-      <footer className="mt-20 py-8 text-center text-slate-600 text-sm border-t border-slate-800">
-        <p>Powered by Google Gemini 2.5 Flash & 3.0 Pro</p>
-      </footer>
     </div>
   );
 };
