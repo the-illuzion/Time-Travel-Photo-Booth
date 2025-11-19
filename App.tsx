@@ -96,7 +96,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100 flex flex-col">
       {/* Header */}
-      <header className="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+      {/* <header className="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           {/* <nav className="flex space-x-1 sm:space-x-4">
             <button
@@ -119,7 +119,7 @@ const App: React.FC = () => {
             </button>
           </nav> */}
         </div>
-      </header>
+      </header> */}
 
       {/* Main Content */}
       <main className="flex-grow p-4 sm:p-8 max-w-7xl mx-auto w-full">
