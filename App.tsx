@@ -94,32 +94,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-100 flex flex-col">
-      {/* Header */}
-      {/* <header className="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          {/* <nav className="flex space-x-1 sm:space-x-4">
-            <button
-              onClick={() => { setMode(AppMode.TIME_TRAVEL); handleReset(); }}
-              className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${mode === AppMode.TIME_TRAVEL ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/20' : 'text-slate-400 hover:text-white hover:bg-slate-800'}`}
-            >
-              <span className="flex items-center gap-2"><Clock size={16} /> <span className="hidden sm:inline">Time Travel</span></span>
-            </button>
-            <button
-              onClick={() => { setMode(AppMode.MAGIC_EDITOR); handleReset(); }}
-              className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${mode === AppMode.MAGIC_EDITOR ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-500/20' : 'text-slate-400 hover:text-white hover:bg-slate-800'}`}
-            >
-              <span className="flex items-center gap-2"><Wand2 size={16} /> <span className="hidden sm:inline">Magic Editor</span></span>
-            </button>
-            <button
-              onClick={() => { setMode(AppMode.ANALYZER); handleReset(); }}
-              className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${mode === AppMode.ANALYZER ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-500/20' : 'text-slate-400 hover:text-white hover:bg-slate-800'}`}
-            >
-              <span className="flex items-center gap-2"><ScanEye size={16} /> <span className="hidden sm:inline">Analyze</span></span>
-            </button>
-          </nav> */}
-        </div>
-      </header> */}
+    <div className="min-h-screen bg-slate-900 text-slate-100 flex flex-col">      
 
       {/* Main Content */}
       <main className="flex-grow p-4 sm:p-8 max-w-7xl mx-auto w-full">
