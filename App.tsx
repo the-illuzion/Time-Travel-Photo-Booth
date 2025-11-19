@@ -104,7 +104,7 @@ const App: React.FC = () => {
               ChronoLens
             </span>
           </div>
-          <nav className="flex space-x-1 sm:space-x-4">
+          {/* <nav className="flex space-x-1 sm:space-x-4">
             <button
               onClick={() => { setMode(AppMode.TIME_TRAVEL); handleReset(); }}
               className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${mode === AppMode.TIME_TRAVEL ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/20' : 'text-slate-400 hover:text-white hover:bg-slate-800'}`}
@@ -123,7 +123,7 @@ const App: React.FC = () => {
             >
               <span className="flex items-center gap-2"><ScanEye size={16} /> <span className="hidden sm:inline">Analyze</span></span>
             </button>
-          </nav>
+          </nav> */}
         </div>
       </header>
 
