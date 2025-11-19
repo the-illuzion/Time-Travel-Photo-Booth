@@ -98,12 +98,6 @@ const App: React.FC = () => {
       {/* Header */}
       <header className="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <History className="w-8 h-8 text-purple-500" />
-            <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400 brand-font">
-              ChronoLens
-            </span>
-          </div>
           {/* <nav className="flex space-x-1 sm:space-x-4">
             <button
               onClick={() => { setMode(AppMode.TIME_TRAVEL); handleReset(); }}
