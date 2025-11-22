@@ -94,38 +94,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-100 flex flex-col">
-      {/* Header */}
-      <header className="bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <History className="w-8 h-8 text-purple-500" />
-            <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400 brand-font">
-              ChronoLens
-            </span>
-          </div>
-          <nav className="flex space-x-1 sm:space-x-4">
-            <button
-              onClick={() => { setMode(AppMode.TIME_TRAVEL); handleReset(); }}
-              className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${mode === AppMode.TIME_TRAVEL ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/20' : 'text-slate-400 hover:text-white hover:bg-slate-800'}`}
-            >
-              <span className="flex items-center gap-2"><Clock size={16} /> <span className="hidden sm:inline">Time Travel</span></span>
-            </button>
-            <button
-              onClick={() => { setMode(AppMode.MAGIC_EDITOR); handleReset(); }}
-              className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${mode === AppMode.MAGIC_EDITOR ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-500/20' : 'text-slate-400 hover:text-white hover:bg-slate-800'}`}
-            >
-              <span className="flex items-center gap-2"><Wand2 size={16} /> <span className="hidden sm:inline">Magic Editor</span></span>
-            </button>
-            <button
-              onClick={() => { setMode(AppMode.ANALYZER); handleReset(); }}
-              className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${mode === AppMode.ANALYZER ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-500/20' : 'text-slate-400 hover:text-white hover:bg-slate-800'}`}
-            >
-              <span className="flex items-center gap-2"><ScanEye size={16} /> <span className="hidden sm:inline">Analyze</span></span>
-            </button>
-          </nav>
-        </div>
-      </header>
+    <div className="min-h-screen bg-slate-900 text-slate-100 flex flex-col">      
 
       {/* Main Content */}
       <main className="flex-grow p-4 sm:p-8 max-w-7xl mx-auto w-full">
@@ -138,7 +107,7 @@ const App: React.FC = () => {
             {mode === AppMode.ANALYZER && <span className="neon-text text-emerald-300">Decode the Visual</span>}
           </h1>
           <p className="text-slate-400 max-w-2xl mx-auto text-lg">
-            {mode === AppMode.TIME_TRAVEL && "Upload or snap a photo, select an era, and let Gemini transport you through time."}
+            {mode === AppMode.TIME_TRAVEL && "Upload or snap a photo, select an era, and let us transport you through time."}
             {mode === AppMode.MAGIC_EDITOR && "Use natural language to add filters, remove objects, or completely transform your images."}
             {mode === AppMode.ANALYZER && "Get deep insights, historical context, and detailed descriptions of any image."}
           </p>
@@ -301,9 +270,6 @@ const App: React.FC = () => {
         )}
       </main>
       
-      <footer className="mt-20 py-8 text-center text-slate-600 text-sm border-t border-slate-800">
-        <p>Powered by Google Gemini 2.5 Flash & 3.0 Pro</p>
-      </footer>
     </div>
   );
 };
